@@ -1,12 +1,12 @@
-import { Tabs } from "expo-router";
-import { Text, View } from "react-native";
+import { Link, Tabs } from "expo-router";
+import { View } from "react-native";
 
 export default function TabLayout(){
 
   return (
     <Tabs screenOptions={{ headerRight: () => (
       <View>
-        <Text style={{ paddingRight:16 }}>설정</Text>
+        <Link style={{ paddingRight:16 }} href={"/setting"}>설정</Link>
       </View>
   ),}}>
       <Tabs.Screen name="index" options={{ title:"홈"}}/>
